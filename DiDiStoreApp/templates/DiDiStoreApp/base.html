@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/all.css' %}">
+    <title>DiDi | {{title}}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_wrapper">
+                <nav class="header_navigation">
+                    <ul class="header_navigation_list left_side_navigation">
+                        <li><a href="#"  class="naviagtion_links">Главная</a></li>
+                        <li class="naviagtion_links" id="show_categories">Категории</li>
+                    </ul>
+                </nav>
+                <p class="header_logo">DiDi</p>
+                <nav class="header_navigation">
+                    <ul class="header_navigation_list right_side_navigation">
+                        <li class="search_line">
+                            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                            <form action="#" method="post" class="search_form">
+                                <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
+                                <input type="submit" value="поиск" class="search_submit">
+                            </form>
+                        </li>
+                        <li><a href="#" class="naviagtion_links"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li id="show_registrations"><i class="fa-solid fa-user"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <article class="background category_window">
+        <div class="container">
+            <div class="category_wrapper">
+                <p class="close_btn" id="hide_categories">Закрыть</p>
+                <section class="category_section">
+                    <div class="categories">
+                        <h2 class="category_title">Художественная литература</h2>
+                        <nav class="general_categories">
+                            <a href="#" class="category_links">Проза на <br> Английском языке</a>
+                            <a href="#" class="category_links">Фантастика, <br> Фентези,Ужасы</a>
+                            <a href="#" class="category_links">Остросюжетная <br> литература</a>
+                            <a href="#" class="category_links">Проза</a>
+                            <a href="#" class="category_links">Поэзия</a>
+                        </nav>
+                    </div>
+                    <div class="categories">
+                        <h2 class="category_title">Детская литература</h2>
+                        <nav class="general_categories">
+                            <a href="#" class="category_links">Художественная <br> литература</a>
+                            <a href="#" class="category_links">Познавательная <br> литература</a>
+                            <a href="#" class="category_links">Книги для детей <br> и родителей</a>
+                            <a href="#" class="category_links">Детская книга на <br> Английском языке</a>
+                            <a href="#" class="category_links">Музыкальне <br> книги</a>
+                            <a href="#" class="category_links">Детские комиксы</a>
+                            <a href="#" class="category_links">Обучение</a>
+                        </nav>
+                    </div>
+                    <div class="categories">
+                        <h2 class="category_title">Познавательная литература</h2>
+                        <nav class="general_categories">
+                            <a href="#" class="category_links">Научная <br> литература</a>
+                            <a href="#" class="category_links">Медицина. <br> Здоровье</a>
+                            <a href="#" class="category_links">Книги по культуре <br> и искусству</a>
+                            <a href="#" class="category_links">Иностранные <br>  языки</a>
+                            <a href="#" class="category_links">Духовное <br> развитие</a>
+                            <a href="#" class="category_links">Бизнес. Пособия</a>
+                            <a href="#" class="category_links">Общество</a>
+                        </nav>
+                    </div>
+                    <div class="categories">
+                        <h2 class="category_title">Дом.Быт.Досуг</h2>
+                        <nav class="general_categories">
+                            <a href="#" class="category_links">Домоводство, <br> Хозяйство</a>
+                            <a href="#" class="category_links">Рукоделие, <br> Творчество</a>
+                            <a href="#" class="category_links">Музыкальне <br> книги</a>
+                            <a href="#" class="category_links">Кулинария</a>
+                            <a href="#" class="category_links">Туризм</a>
+                        </nav>
+                    </div>
+                        
+                </section>
+
+            </div>
+        </div>
+
+    </article>
+    <article class="background registration_window">
+        <div class="container">
+            <div class="registration_wrapper">
+                <p class="close_btn close_windows" id="hide_registrations">закрыть</p>
+                <div class="sign_up">
+                    <h2 class="registration_title">Регистрация</h2>
+                    <form action="#" method="post" class="registration_forms">
+                        <fieldset class="form_field">
+                            <label for="name" class="registartion_input_titels">Имя:</label>
+                            <input type="text" name="name" id="name" placeholder="Введите свое имя" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
+                            <label for="surname" class="registartion_input_titels">Фамилия:</label>
+                            <input type="text" name="surname" id="surname" placeholder="Введите свою фамилию" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
+                            <label for="email" class="registartion_input_titels">Почта:</label>
+                            <input type="email" name="email" id="email" placeholder="Введите свою почту" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
+                            <label for="pass" class="registartion_input_titels">Пароль:</label>
+                            <input type="password" name="pass" id="pass" placeholder="Введите пароль" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
+                            <label for="conf_pass" class="registartion_input_titels">Повторите пароль:</label>
+                            <input type="password" name="conf_pass" id="conf_pass" placeholder="Повторите свой пароль" required class="registration_inputs">
+                        </fieldset>
+                        <input type="submit" value="Регистрация" class="registration_inputs registartion_btn">
+                    </form>
+
+                </div>
+                <div class="sign_in">
+                    <h2 class="registration_title">Войти</h2>
+                    <form action="#" methog="post" class="registration_forms">
+                        <fieldset class="form_field">
+                            <label for="email" class="registartion_input_titels">Почта:</label>
+                            <input type="email" name="email" id="email" placeholder="Введите свою почту" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
+                            <label for="pass" class="registartion_input_titels">Пароль:</label>
+                            <input type="password" name="pass" id="pass" placeholder="Введите пароль" required class="registration_inputs">
+                        </fieldset>
+                        <input type="submit" value="Вход" class="registration_inputs registartion_btn">
+                    </form>
+                </div>
+                <div class="ch_reg_forms">
+                    <button class="ch_registration_form" id="#sign_up">Регистрация</button>
+                    <button class="ch_registration_form" id="#sign_in">Войти</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <section class="socialn_navigation footer_general_layout">  
+                    <div class="payments_categories footer_general_layout">
+                        <nav class="payments">
+                            <h2 class="payments_categories_title">Покупка</h2>
+                            <ul class="payment_list">
+                                <li class="payments_categories_link"><a href="#">Способы оплаты</a></li>
+                                <li class="payments_categories_link"><a href="#">Способы доставки</a></li>
+                                <li class="payments_categories_link"><a href="#">Возврат и обмен</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="min_catregories">
+                            <h2 class="payments_categories_title">Каталог продукции</h2>
+                            <ul class="min_category_list">
+                                <li class="payments_categories_link"><a href="#">Художественная литература</a></li>
+                                <li class="payments_categories_link"><a href="#">Познавательная литература</a></li>
+                                <li class="payments_categories_link"><a href="#">Детская литература</a></li>
+                                <li class="payments_categories_link"><a href="#">Хобби и увлечения</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="contacts_socialn">
+                        <nav class="contacts">
+                            <ul class="contact_list">
+                                <li>телефон 1: 8 707 598 64 94</li>
+                                <li>телефон 2: 8 707 598 94 44</li>
+                                <li>г. Алматы, улица Пушкина, дом 35а</li>
+                            </ul>
+                        </nav> 
+                        <nav class="social_networks ">
+                            <ul class="socialn_list">
+                                <li class="socialn_links" title="instagram"><a href="https://fontawesome.com/v5/icons/camera-polaroid?s=solid" target="_blank"><i class="fas fa-camera-retro"></i></a></li>
+                                <li class="socialn_links" title="telegram"><a href="#" target="_blank"><i class="fa-solid fa-paper-plane"></i></a></li>
+                                <li class="socialn_links" title="youtube"><a href="https://www.youtube.com/watch?v=XvJeAXOUjY4&t=8s" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li class="socialn_links" title="twitter"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </section>
+                <p class="copyright">copyright © 2022 all rights reserved by DiDi</p>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'DiDiStoreApp/js/animation.js' %}"></script>
+</body>
+</html>
