@@ -11,12 +11,12 @@
     <title>DiDi | {{title}}</title>
 </head>
 <body>
-    <header class="header_navigation">
-        <div class="container">
+    <div class="container">
+        <header class="header_navigation">
             <div class="header_wrapper">
                 <nav class="header_navigation">
                     <ul class="header_navigation_list left_side_navigation">
-                        <li><a href="#"  class="naviagtion_links">Главная</a></li>
+                        <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
                         <li class="naviagtion_links" id="show_categories">Категории</li>
                     </ul>
                 </nav>
@@ -30,69 +30,71 @@
                                 <input type="submit" value="поиск" class="search_submit">
                             </form>
                         </li>
-                        <li><a href="#" class="naviagtion_links"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li>
+                            <a href="{% url 'desired' %}" class="naviagtion_links">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
                         <li id="show_registrations"><i class="fa-solid fa-user"></i></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
-    <article class="background category_window">
-        <div class="container">
-            <div class="category_wrapper">
-                <p class="close_btn" id="hide_categories">Закрыть</p>
-                <section class="category_section">
-                    <div class="categories">
-                        <h2 class="category_title">Художественная литература</h2>
-                        <nav class="general_categories">
-                            <a href="#" class="category_links">Проза на <br> Английском языке</a>
-                            <a href="#" class="category_links">Фантастика, <br> Фентези,Ужасы</a>
-                            <a href="#" class="category_links">Остросюжетная <br> литература</a>
-                            <a href="#" class="category_links">Проза</a>
-                            <a href="#" class="category_links">Поэзия</a>
-                        </nav>
-                    </div>
-                    <div class="categories">
-                        <h2 class="category_title">Детская литература</h2>
-                        <nav class="general_categories">
-                            <a href="#" class="category_links">Художественная <br> литература</a>
-                            <a href="#" class="category_links">Познавательная <br> литература</a>
-                            <a href="#" class="category_links">Книги для детей <br> и родителей</a>
-                            <a href="#" class="category_links">Детская книга на <br> Английском языке</a>
-                            <a href="#" class="category_links">Музыкальне <br> книги</a>
-                            <a href="#" class="category_links">Детские комиксы</a>
-                            <a href="#" class="category_links">Обучение</a>
-                        </nav>
-                    </div>
-                    <div class="categories">
-                        <h2 class="category_title">Познавательная литература</h2>
-                        <nav class="general_categories">
-                            <a href="#" class="category_links">Научная <br> литература</a>
-                            <a href="#" class="category_links">Медицина. <br> Здоровье</a>
-                            <a href="#" class="category_links">Книги по культуре <br> и искусству</a>
-                            <a href="#" class="category_links">Иностранные <br>  языки</a>
-                            <a href="#" class="category_links">Духовное <br> развитие</a>
-                            <a href="#" class="category_links">Бизнес. Пособия</a>
-                            <a href="#" class="category_links">Общество</a>
-                        </nav>
-                    </div>
-                    <div class="categories">
-                        <h2 class="category_title">Дом.Быт.Досуг</h2>
-                        <nav class="general_categories">
-                            <a href="#" class="category_links">Домоводство, <br> Хозяйство</a>
-                            <a href="#" class="category_links">Рукоделие, <br> Творчество</a>
-                            <a href="#" class="category_links">Музыкальне <br> книги</a>
-                            <a href="#" class="category_links">Кулинария</a>
-                            <a href="#" class="category_links">Туризм</a>
-                        </nav>
-                    </div>
-                </section>
+        </header>
+        <article class="background category_window">
+            <div class="container">
+                <div class="category_wrapper">
+                    <p class="close_btn" id="hide_categories">Закрыть</p>
+                    <section class="category_section">
+                        <div class="categories">
+                            <h2 class="category_title">Художественная литература</h2>
+                            <nav class="general_categories">
+                                <a href="#" class="category_links">Проза на <br> Английском языке</a>
+                                <a href="#" class="category_links">Фантастика, <br> Фентези,Ужасы</a>
+                                <a href="#" class="category_links">Остросюжетная <br> литература</a>
+                                <a href="#" class="category_links">Проза</a>
+                                <a href="#" class="category_links">Поэзия</a>
+                            </nav>
+                        </div>
+                        <div class="categories">
+                            <h2 class="category_title">Детская литература</h2>
+                            <nav class="general_categories">
+                                <a href="#" class="category_links">Художественная <br> литература</a>
+                                <a href="#" class="category_links">Познавательная <br> литература</a>
+                                <a href="#" class="category_links">Книги для детей <br> и родителей</a>
+                                <a href="#" class="category_links">Детская книга на <br> Английском языке</a>
+                                <a href="#" class="category_links">Музыкальне <br> книги</a>
+                                <a href="#" class="category_links">Детские комиксы</a>
+                                <a href="#" class="category_links">Обучение</a>
+                            </nav>
+                        </div>
+                        <div class="categories">
+                            <h2 class="category_title">Познавательная литература</h2>
+                            <nav class="general_categories">
+                                <a href="#" class="category_links">Научная <br> литература</a>
+                                <a href="#" class="category_links">Медицина. <br> Здоровье</a>
+                                <a href="#" class="category_links">Книги по культуре <br> и искусству</a>
+                                <a href="#" class="category_links">Иностранные <br>  языки</a>
+                                <a href="#" class="category_links">Духовное <br> развитие</a>
+                                <a href="#" class="category_links">Бизнес. Пособия</a>
+                                <a href="#" class="category_links">Общество</a>
+                            </nav>
+                        </div>
+                        <div class="categories">
+                            <h2 class="category_title">Дом.Быт.Досуг</h2>
+                            <nav class="general_categories">
+                                <a href="#" class="category_links">Домоводство, <br> Хозяйство</a>
+                                <a href="#" class="category_links">Рукоделие, <br> Творчество</a>
+                                <a href="#" class="category_links">Музыкальне <br> книги</a>
+                                <a href="#" class="category_links">Кулинария</a>
+                                <a href="#" class="category_links">Туризм</a>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
-    </article>
-    <article class="background registration_window">
-        <div class="container">
-            <div class="registration_wrapper">
+        </article>
+        <article class="background registration_window">
+            <div class="registration_wrapper modal_window_wrapper">
                 <p class="close_btn close_windows" id="hide_registrations">закрыть</p>
                 <div class="sign_up">
                     <h2 class="registration_title">Регистрация</h2>
@@ -139,14 +141,18 @@
                     <button class="ch_registration_form" id="#sign_in">Войти</button>
                 </div>
             </div>
-        </div>
-    </article>
+          
+                
+           
+        </article>
 
-    {% block main %}
-    {% endblock %}
+    
+   
 
-    <footer class="footer">
-        <div class="container">
+        {% block main %}
+        {% endblock %}
+
+        <footer class="footer">
             <div class="footer_wrapper">
                 <section class="socialn_navigation footer_general_layout">  
                     <div class="payments_categories footer_general_layout">
@@ -161,10 +167,10 @@
                         <nav class="min_catregories">
                             <h2 class="payments_categories_title">Каталог продукции</h2>
                             <ul class="min_category_list">
-                                <li class="payments_categories_link"><a href="#">Художественная литература</a></li>
-                                <li class="payments_categories_link"><a href="#">Познавательная литература</a></li>
-                                <li class="payments_categories_link"><a href="#">Детская литература</a></li>
-                                <li class="payments_categories_link"><a href="#">Хобби и увлечения</a></li>
+                                <li class="payments_categories_link"><a href="#">Фантастика, фентези, ужасы</a></li>
+                                <li class="payments_categories_link"><a href="#">Книги для детей и родителей</a></li>
+                                <li class="payments_categories_link"><a href="#">Научна литература</a></li>
+                                <li class="payments_categories_link"><a href="#">Домоводство, Хозяйство</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -188,9 +194,9 @@
                     </div>
                 </section>
                 <p class="copyright">copyright © 2022 all rights reserved by DiDi</p>
-            </div>
-        </div>
-    </footer>
+            </div>     
+        </footer>
+    </div>
     <script src="{% static 'DiDiStoreApp/js/animation.js' %}"></script>
 </body>
 </html>

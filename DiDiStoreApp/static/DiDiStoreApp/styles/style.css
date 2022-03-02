@@ -213,16 +213,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding-top: 20px;
     overflow: hidden;
 }
-.registration_wrapper{
+.modal_window_wrapper{
     background-color: #fff;
     color: #000;
     -webkit-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.2) inset;
-    width: 477px;
-    margin: 0 auto;
-    padding: 40px 48px;
     box-sizing: border-box;
+    margin: 0 auto;
+}
+.registration_wrapper{
+    width: 477px;
+    padding: 40px 48px;
+    
 }
 .close_windows{
     font-size: 14px;
@@ -452,13 +455,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: #201F1F;
 
 }
-.book,
+.desired_book,
 .action_btn_counter,
-.book_counter{
+.desired_book_counter{
     display: flex;
     align-items: center;
 }
-.book_title{
+.desired_book_title{
     margin-left: 12px;
     letter-spacing: 1.5px;
     font-size: 14px;
@@ -467,10 +470,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .action_btn_counter{
     justify-content: right;
 }
-.book_counter{
+.desired_book_counter{
     margin-right: 62px;
 }
-.counter_btn{
+.desired_counter_btn{
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     color: #fff;
@@ -479,17 +482,17 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transition: all .3s;
 }
 
-.counter_btn:active{
+.desired_counter_btn:active{
     color: rgb(202, 202, 202);
 }
-.counter_sum{
+.desired_counter_sum{
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 
-.remove_btn,
-.buy_btn{
+.desired_remove_btn,
+.desired_buy_btn{
     height: 60px;
     width: 60px;
     color: #fff;
@@ -497,21 +500,172 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-weight: bold;
     border: 0;
 }
-.remove_btn{
+.desired_remove_btn{
     background-color: #7E2626;
 }
-.buy_btn{
+.desired_buy_btn{
     background-color: #3E6F32;
 }
-.remove_btn:hover{
+.desired_remove_btn:hover{
     background-color: #6d1f1f;
 }
-.remove_btn:active{
+.desired_remove_btn:active{
     background-color: #571919;
 }
-.buy_btn:hover{
+.desired_buy_btn:hover{
     background-color: #37632c;
 }
-.buy_btn:active{
+.desired_buy_btn:active{
     background-color: #2b4e23;
 }
+
+.book_content{
+    padding: 150px 0;
+}
+.book_contanet_wrapper{
+    width: 968px;
+    margin: 0 auto;
+    
+
+}
+.book_section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    /* justify-items: center; */
+    column-gap: 85px;
+    row-gap: 58px;
+
+}
+.book_img{
+    transition: all 1s;
+
+}
+.book_img:hover{
+    -webkit-box-shadow: 0px 4px 73px 20px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0px 4px 73px 20px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 73px 20px rgba(255, 255, 255, 0.25);    
+}
+.book_title{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.btn_price_rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+
+}
+.buy_btn{
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.buy_btn:active{
+    background-color: rgb(233, 233, 233);
+
+}
+.price{
+    display: flex;
+}
+.price p{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.mini_bag{
+    font-size: 16px;
+    cursor: pointer;
+}
+.mini_bag:active{
+    color: rgb(233, 233, 233);
+}
+
+.book_modal_window_wrapper{
+    width: 680px;
+    padding: 30px 43px;
+    border-radius: 9px;
+}
+.mw_title_desc{
+    display: flex;
+}
+.mw_book_img{
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.mw_book_title{
+    font-weight: bold;
+    text-align: center;
+}
+.book_desc{
+    margin-left: 53px;
+}
+
+.desc_title{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.desc_text{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+}
+.price_counter_rating{
+    margin-top: 75px;
+}
+.price_counter{
+    display: flex;
+    justify-content: space-between;
+}
+.book_counter{
+    display: flex;
+    align-items: center;
+    
+}
+.counter_btn{
+    font-weight: bold;
+    font-size: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+
+.counter_sum{
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 6px;
+}
+.mw_action_btns{
+    display: flex;
+    align-items: center;
+}
+.bag{
+    color: #1C1919;
+    font-size: 40px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.counter_btn:active,.bag:active{
+    color: rgb(32, 32, 32);
+}
+.mw_buy_btn{
+    padding: 12px 23px;
+    border-radius: 20px;
+    background-color: #1C1919;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 0;
+}
+ .mw_buy_btn:active{
+    background-color: rgb(32, 32, 32);
+}
+
+  
+
+    

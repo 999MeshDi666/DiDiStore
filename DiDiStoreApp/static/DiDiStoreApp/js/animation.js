@@ -43,3 +43,15 @@ let sign_in_btn = document.getElementById('#sign_in').addEventListener('click',(
     sign_in.style.display = 'block';
     sign_up.style.display = 'none';
 });
+
+
+let book_modal_window = document.querySelector('.book_modal_window');
+let show_modal_window = document.querySelectorAll('.buy_btn');
+show_modal_window.forEach( (e) => {e.addEventListener('click',() => {
+        book_modal_window.classList.toggle('show_window')
+    });
+});
+let hide_modal_window = document.getElementById('hide_modal_window');
+hide_modal_window.addEventListener('click', ()=>{
+    book_modal_window.classList.toggle('show_window')
+});
