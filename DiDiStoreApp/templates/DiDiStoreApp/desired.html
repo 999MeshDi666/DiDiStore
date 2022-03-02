@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/all.css' %}">
+    <title>DiDi | {{title}}</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header_mini_nav">
+            <div class="mini_nav_wrapper">
+                <nav class="mini_navigation">
+                    <ul class="mini_nav_list">
+                        <li class="mini_nav_links"><a href="#">Главная</a></li>
+                        <li class="mini_nav_links"><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="desired">
+            <div class="desired_wrapper">
+                <ul class="desired_list">
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/maksF_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">М. Фрай | Наваждения</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 1250тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/genius_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">Д. Глик | Гений</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 2500тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/feiman_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">Р. Фейман | Вы конечено, шутите</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 1250тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/maksF_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">М. Фрай | Наваждения</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 1250тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/genius_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">Д. Глик | Гений</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 2500тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <img src="{% static 'DiDiStoreApp/images/feiman_mini.png' %}" alt="book" class="book_img">
+                            <p class="book_title">Р. Фейман | Вы конечено, шутите</p>
+                        </div>
+                        <div class="action_btn_counter">
+                            <span class="book_counter">
+                                <button class="counter_btn">+</button>
+                                <p class="counter_sum">Кол-во: 1 | 1250тг</p>
+                            </span>
+                            <span class="action_btns">
+                                <button class="remove_btn">Удалить</button>
+                                <button class="buy_btn">Купить</button>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+       
+    </div>
+    
+</body>
+</html>

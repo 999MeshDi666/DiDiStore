@@ -11,7 +11,7 @@
     <title>DiDi | {{title}}</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header_navigation">
         <div class="container">
             <div class="header_wrapper">
                 <nav class="header_navigation">
@@ -36,7 +36,6 @@
                 </nav>
             </div>
         </div>
-
     </header>
     <article class="background category_window">
         <div class="container">
@@ -87,12 +86,9 @@
                             <a href="#" class="category_links">Туризм</a>
                         </nav>
                     </div>
-                        
                 </section>
-
             </div>
         </div>
-
     </article>
     <article class="background registration_window">
         <div class="container">
@@ -114,16 +110,15 @@
                             <input type="email" name="email" id="email" placeholder="Введите свою почту" required class="registration_inputs">
                         </fieldset>
                         <fieldset class="form_field">
+                            <label for="tel" class="registartion_input_titels">Номер телефона:</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Введите свой номер" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
                             <label for="pass" class="registartion_input_titels">Пароль:</label>
                             <input type="password" name="pass" id="pass" placeholder="Введите пароль" required class="registration_inputs">
                         </fieldset>
-                        <fieldset class="form_field">
-                            <label for="conf_pass" class="registartion_input_titels">Повторите пароль:</label>
-                            <input type="password" name="conf_pass" id="conf_pass" placeholder="Повторите свой пароль" required class="registration_inputs">
-                        </fieldset>
                         <input type="submit" value="Регистрация" class="registration_inputs registartion_btn">
                     </form>
-
                 </div>
                 <div class="sign_in">
                     <h2 class="registration_title">Войти</h2>
