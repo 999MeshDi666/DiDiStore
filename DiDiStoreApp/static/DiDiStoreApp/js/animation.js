@@ -1,3 +1,5 @@
+let bdy = document.body;
+
 
 let search_line = document.querySelector('.search_line');
 let search_icon = document.getElementById('search_icon');
@@ -12,9 +14,12 @@ const showHideWindows = (show_prop, hide_prop, classList_prop, toggler_prop)=>{
 
     show_prop.addEventListener('click', ()=>{
         classList_prop.classList.toggle(toggler_prop);
+        bdy.style.overflowY = 'hidden';
+        
     });
     hide_prop.addEventListener('click', ()=>{
         classList_prop.classList.toggle(toggler_prop);
+        bdy.style.overflowY = 'auto';
     });
 }
 
@@ -32,7 +37,6 @@ showHideWindows(show_registrations,hide_registrations,registration_window,'show_
 let sign_up = document.querySelector('.sign_up');
 let sign_in = document.querySelector('.sign_in');
 
-
 let sign_up_btn = document.getElementById('#sign_up').addEventListener('click',()=>{
     registration_window.classList.remove('registration_window_sign_in')
     sign_in.style.display = 'none';
@@ -45,13 +49,17 @@ let sign_in_btn = document.getElementById('#sign_in').addEventListener('click',(
 });
 
 
-let book_modal_window = document.querySelector('.book_modal_window');
-let show_modal_window = document.querySelectorAll('.buy_btn');
-show_modal_window.forEach( (e) => {e.addEventListener('click',() => {
-        book_modal_window.classList.toggle('show_window')
-    });
-});
-let hide_modal_window = document.getElementById('hide_modal_window');
-hide_modal_window.addEventListener('click', ()=>{
-    book_modal_window.classList.toggle('show_window')
-});
+// let book_modal_window = document.querySelector('.book_modal_window');
+// let show_modal_window = document.querySelectorAll('.buy_btn');
+// show_modal_window.forEach( (e) => {e.addEventListener('click',() => {
+
+//         book_modal_window.classList.toggle('show_window');
+//         bdy.style.overflowY = 'hidden';
+        
+//     });
+// });
+// let hide_modal_window = document.getElementById('hide_modal_window');
+// hide_modal_window.addEventListener('click', ()=>{
+//     book_modal_window.classList.toggle('show_window');
+//     bdy.style.overflowY = 'auto';
+// });

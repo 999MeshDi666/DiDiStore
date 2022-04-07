@@ -100,6 +100,10 @@
                     <h2 class="registration_title">Регистрация</h2>
                     <form action="#" method="post" class="registration_forms">
                         <fieldset class="form_field">
+                            <label for="nickname" class="registartion_input_titels">Псевдоним:</label>
+                            <input type="name" name="nickname" id="nickname" placeholder="Введите свой псевдоним" required class="registration_inputs">
+                        </fieldset>
+                        <fieldset class="form_field">
                             <label for="name" class="registartion_input_titels">Имя:</label>
                             <input type="text" name="name" id="name" placeholder="Введите свое имя" required class="registration_inputs">
                         </fieldset>
@@ -126,14 +130,14 @@
                     <h2 class="registration_title">Войти</h2>
                     <form action="#" methog="post" class="registration_forms">
                         <fieldset class="form_field">
-                            <label for="email" class="registartion_input_titels">Почта:</label>
-                            <input type="email" name="email" id="email" placeholder="Введите свою почту" required class="registration_inputs">
+                            <label for="nickname" class="registartion_input_titels">Псевдоним:</label>
+                            <input type="name" name="nickname" id="nickname" placeholder="Введите свой псевдоним" required class="registration_inputs">
                         </fieldset>
                         <fieldset class="form_field">
                             <label for="pass" class="registartion_input_titels">Пароль:</label>
                             <input type="password" name="pass" id="pass" placeholder="Введите пароль" required class="registration_inputs">
                         </fieldset>
-                        <input type="submit" value="Вход" class="registration_inputs registartion_btn">
+                        <input type="submit" value="Войти" class="registration_inputs registartion_btn">
                     </form>
                 </div>
                 <div class="ch_reg_forms">
@@ -141,13 +145,8 @@
                     <button class="ch_registration_form" id="#sign_in">Войти</button>
                 </div>
             </div>
-          
-                
-           
+                     
         </article>
-
-    
-   
 
         {% block main %}
         {% endblock %}

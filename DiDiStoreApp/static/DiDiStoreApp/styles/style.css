@@ -4,7 +4,7 @@ body{
     background-color: #1C1919;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-   
+
 }
 
 body,
@@ -46,9 +46,9 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
-
-
-
+input:-webkit-autofill{
+    background-color: #fff;
+}
 .container{
     max-width: 1240px;
     box-sizing: border-box;
@@ -224,12 +224,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .registration_wrapper{
     width: 477px;
-    padding: 40px 48px;
+    padding: 30px 48px;
+    box-sizing: border-box;
     
 }
 .close_windows{
     font-size: 14px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     transition: all .6s;
 }
 .close_windows:hover{
@@ -237,7 +238,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .registration_title{
     text-align: center;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 }
 .registration_forms{
     padding: 0 40px;
@@ -245,7 +246,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .form_field{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .registartion_input_titels{
     margin: 0 0 5px 14px;
@@ -267,7 +268,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .registartion_btn{
     width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
@@ -281,7 +282,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: rgb(180, 180, 180);
 }
 .ch_reg_forms{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -582,6 +583,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 .mini_bag:active{
     color: rgb(233, 233, 233);
+}
+
+.book_modal_window{
+    padding: 70px 0;
+    overflow-y: hidden;
 }
 
 .book_modal_window_wrapper{
