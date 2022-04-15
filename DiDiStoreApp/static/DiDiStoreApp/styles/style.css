@@ -4,7 +4,6 @@ body{
     background-color: #1C1919;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-
 }
 
 body,
@@ -50,7 +49,7 @@ input:-webkit-autofill{
     background-color: #fff;
 }
 .container{
-    max-width: 1240px;
+    max-width: 1320px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -565,11 +564,12 @@ input:-webkit-autofill{
     padding: 6px 14px;
     font-size: 12px;
     font-weight: bold;
+    color: #000;
 }
 .buy_btn:active{
     background-color: rgb(233, 233, 233);
-
 }
+
 .price{
     display: flex;
 }
@@ -585,93 +585,3 @@ input:-webkit-autofill{
     color: rgb(233, 233, 233);
 }
 
-.book_modal_window{
-    padding: 70px 0;
-    overflow-y: hidden;
-}
-
-.book_modal_window_wrapper{
-    width: 680px;
-    padding: 30px 43px;
-    border-radius: 9px;
-}
-.mw_title_desc{
-    display: flex;
-}
-.mw_book_img{
-    -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-}
-.mw_book_title{
-    font-weight: bold;
-    text-align: center;
-}
-.book_desc{
-    margin-left: 53px;
-}
-
-.desc_title{
-    text-align: center;
-    margin-bottom: 12px;
-}
-.desc_text{
-    text-align: justify;
-    font-size: 14px;
-    line-height: 22px;
-}
-.price_counter_rating{
-    margin-top: 75px;
-}
-.price_counter{
-    display: flex;
-    justify-content: space-between;
-}
-.book_counter{
-    display: flex;
-    align-items: center;
-    
-}
-.counter_btn{
-    font-weight: bold;
-    font-size: 46px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-}
-
-
-.counter_sum{
-    font-weight: bold;
-    font-size: 24px;
-    margin-right: 6px;
-}
-.mw_action_btns{
-    display: flex;
-    align-items: center;
-}
-.bag{
-    color: #1C1919;
-    font-size: 40px;
-    margin-right: 24px;
-    cursor: pointer;
-}
-.counter_btn:active,.bag:active{
-    color: rgb(32, 32, 32);
-}
-.mw_buy_btn{
-    padding: 12px 23px;
-    border-radius: 20px;
-    background-color: #1C1919;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 0;
-}
- .mw_buy_btn:active{
-    background-color: rgb(32, 32, 32);
-}
-
-  
-
-    

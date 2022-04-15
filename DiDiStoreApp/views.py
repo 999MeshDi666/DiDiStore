@@ -9,3 +9,6 @@ def account(request):
 
 def desired(request):
     return render(request, 'DiDiStoreApp/desired.html', {'title': 'Желаемое'})
+
+def details(request):
+    return render(request, 'DiDiStoreApp/details.html', {'title': 'Подробнее'})
