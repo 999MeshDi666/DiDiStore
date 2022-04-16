@@ -1,6 +1,109 @@
 @media (max-width: 1400px) {
     .container{
-        max-width: 1120px;
+        width: 1120px;
     }
-    
 }
+
+
+@media (max-width: 1200px) {
+    .container{
+        width: 992px;
+    }
+    /* header */
+    .header_navigation_list{
+        font-size: 20px;
+    }
+    .fa-bag-shopping, .fa-user{
+        font-size: 30px;
+    }
+    .search_line {
+        width: 32px;
+        height: 32px;
+        padding: 5px;
+    }
+    .search_line_open {
+        width: 200px;
+    }
+    .search_input {
+        width: 106px;
+    }
+    .search_input::placeholder{
+        font-size: 8px;
+        
+    }
+      
+      /* book section */
+    .book_content {
+        padding: 120px 0;
+    }
+    .book_section {
+        justify-items: center;
+        column-gap: 40px;
+    }
+    .book_img{
+        width: 156px;
+    }
+    .book_title{
+        font-size: 14px;
+    }
+    .buy_btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .mini_bag{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 768px;
+    }
+    /* header */
+    .header__desktop-nav{
+        display: none;
+    }
+    .header__mobile-nav{
+        display: block
+    }
+    .header_nav{
+        margin-bottom: 20px
+    }
+    .header__nav-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .header__burger-menu-lines{
+        display: block;
+        background-color: #fff;
+        width: 26px;
+        height: 1px;
+        margin: 7px 0;
+        cursor: pointer;
+    }
+    .search_line {
+        width: 480px;
+        height: 40px;
+        margin: 0 auto;
+        padding: 6px 16px;
+        box-sizing: border-box;
+    }
+    .search_input {
+        width: 400px;
+    }
+    .book_contanet_wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .search_input::placeholder{
+        font-size: 14px;
+        
+    }
+
+  
+}
+
+
+

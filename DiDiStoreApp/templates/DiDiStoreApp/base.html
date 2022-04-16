@@ -5,40 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
-    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/responsives.css' %}">
     <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/animation.css' %}">
     <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/all.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/responsives.css' %}">
+    
     <title>DiDi | {{title}}</title>
 </head>
 <body>
     <div class="container">
         <header class="header_navigation">
             <div class="header_wrapper">
-                <nav class="header_navigation">
-                    <ul class="header_navigation_list left_side_navigation">
-                        <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
-                        <li class="naviagtion_links" id="show_categories">Категории</li>
-                    </ul>
-                </nav>
-                <p class="header_logo">DiDi</p>
-                <nav class="header_navigation">
-                    <ul class="header_navigation_list right_side_navigation">
-                        <li class="search_line">
-                            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-                            <form action="#" method="post" class="search_form">
-                                <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
-                                <input type="submit" value="поиск" class="search_submit">
-                            </form>
-                        </li>
-                        <li>
-                            <a href="{% url 'desired' %}" class="naviagtion_links">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </a>
-                        </li>
-                        <li id="show_registrations"><i class="fa-solid fa-user"></i></li>
-                    </ul>
-                </nav>
+                <div class="header__desktop-nav">
+                    <nav class="header_nav">
+                        <ul class="header_navigation_list left_side_navigation">
+                            <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
+                            <li class="naviagtion_links" id="show_categories">Категории</li>
+                        </ul>
+                    </nav>
+                    <p class="header_logo">DiDi</p>
+                    <nav class="header_navigation">
+                        <ul class="header_navigation_list right_side_navigation">
+                            <li class="search_line">
+                                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                                <form action="#" method="post" class="search_form">
+                                    <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
+                                    <input type="submit" value="поиск" class="search_submit">
+                                </form>
+                            </li>
+                            <li>
+                                <a href="{% url 'desired' %}" class="naviagtion_links">
+                                    <i class="fa-solid fa-bag-shopping "></i>
+                                </a>
+                            </li>
+                            <li id="show_registrations"><i class="fa-solid fa-user "></i></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="header__mobile-nav">
+                    <nav class="header_nav">
+                        <div class="header__nav-side">
+                            <p class="header_logo">DiDi</p>
+                            <div class="header__burger-menu">
+                                <span class="header__burger-menu-lines"></span>
+                                <span class="header__burger-menu-lines"></span>
+                                <span class="header__burger-menu-lines"></span>
+                            </div>
+                        </div>
+                        <div class="header__overlay">
+                            
+                        </div>
+                    </nav>
+                    <div class="search_line" >
+                        <form action="#" method="post" class="search_form">
+                            <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
+                            <input type="submit" value="поиск" class="search_submit">
+                        </form>
+                    </div>         
+                </div>
+               
             </div>
         </header>
         <article class="background category_window">

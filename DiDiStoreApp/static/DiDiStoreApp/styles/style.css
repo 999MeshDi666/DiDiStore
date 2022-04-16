@@ -60,11 +60,16 @@ input:-webkit-autofill{
     user-select: none;
 }
 
-.header_wrapper{
+
+.header__desktop-nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     align-items: center;
+
+}
+.header__mobile-nav{
+    display: none;
 }
 .header_navigation_list{
     display: grid;
@@ -125,8 +130,6 @@ input:-webkit-autofill{
     opacity: 0;
     visibility: hidden; 
 }
-
-
 .search_input{
     width: 135px;
 }
