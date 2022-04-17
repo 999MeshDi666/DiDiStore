@@ -59,13 +59,17 @@
     .container{
         width: 768px;
     }
+    .background {
+        padding: 42px 0;
+    }
    
     .header__desktop-nav{
         display: none;
     }
-    .header__mobile-nav{
+    .header__tablet-nav{
         display: block
     }
+    
     .header__nav-side{
         display: flex;
         justify-content: space-between;
@@ -102,6 +106,24 @@
         font-size: 10px;
         
     }
+    .overlay__list{
+        text-align: right;
+    }
+    .overlay__links{
+        font-size: 25px;
+        margin-bottom: 42px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    .overlay__links a{
+        color: #fff;
+    }
+    .overlay__links:hover{
+        color: rgb(209, 209, 209);
+    }
+    .overlay__links:active{
+        color: rgb(185, 185, 185);
+    }
     .book_contanet_wrapper {
         width: 100%;
         margin: 0 auto;
@@ -114,5 +136,198 @@
   
 }
 
+@media (max-width: 768px) {
+    .container{
+        width: 576px;
+    }
+    .search_line {
+        width: 320px;
+    }
+    .search_input {
+        width: 200px;
+    }
+    
+    .book_content {
+        padding: 100px 0;
+    }
+    .book_section {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 55px;
+    }
+    .book_img {
+        width: 140px;
+    }
+    .book_title {
+        font-size: 12px;
+        text-align: center;
+    }
+    .mini_bag {
+        font-size: 18px;
+    }
+    .buy_btn {
+        font-size: 10px;
+    }
+    .payments__title{
+        font-size: 14px;
+    }
+    .payments_categories_title, .payments_categories_link {
+        margin-bottom: 0px;
+    }
+    .payments_categories_link a {
+        font-size: 8px;  
+    }
+    .contact_list{
+        font-size: 10px;
+    }
+    .contact_list li {
+        line-height: 18px;
+    }
+    .socialn_links {
+        width: 44px;
+        height: 44px;
+    }
+    .socialn_links a {
+        font-size: 22px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+}
 
 
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .header__tablet-nav{
+        display: none
+    }
+    .header__mobile-nav{
+        display: block
+    }
+    .header_nav{
+        margin-bottom: 20px;
+    }
+    .close_btn{
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+    .overlay__links {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }    
+    .header_logo {
+        font-size: 40px;
+    }
+    .search_line {
+        width: 300px;
+        height: 35px;
+        padding: 8px 16px;
+    }
+    .search_input {
+        width: 188px
+    }
+    .fa-magnifying-glass {
+        font-size: 18px;
+    }
+    .book_content {
+        padding: 80px 0;
+    }
+    .book_section {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+    }
+    .book_img {
+        width: 120px;
+    }
+    .book_title {
+        font-size: 10px;
+    }
+    .mini_bag {
+        font-size: 12px;
+    }
+    .buy_btn {
+        font-size: 8px;
+        padding: 4px 10px;
+    }    
+    .price p {
+        font-size: 12px;
+    }
+    .footer_general_layout {
+        grid-template-columns: 1fr;
+    }
+    .contacts_socialn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .payments_categories{
+        display: none;
+    } 
+    .contact_list {
+        font-size: 8px;
+    }
+    .socialn_links {
+        width: 30px;
+        height: 30px;
+        padding: 5px 0;
+    }
+    .socialn_links a {
+        font-size: 18px;
+    }
+    .copyright{
+        margin-top: 20px;
+
+    }
+}
+
+@media (max-width: 380px) and (min-width: 320px) {
+    
+    .search_line {
+        width: 240px;
+    }
+    .search_input {
+        width: 138px;
+    }
+    .search_submit {
+        font-size: 12px;
+    }
+    .book_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .book_img {
+        width: 140px;
+    }
+    .book_img:hover{
+        -webkit-box-shadow: 0px 4px 60px 10px rgba(255, 255, 255, 0.25);
+        -moz-box-shadow: 0px 4px 60px 10px rgba(255, 255, 255, 0.25);
+        box-shadow: 0px 4px 60px 10px rgba(255, 255, 255, 0.25);    
+    }
+    .book_title {
+        font-size: 12px;
+    }
+    .buy_btn {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    .price p {
+        font-size: 14px;
+    }
+    .mini_bag {
+        font-size: 18px;
+    }
+   
+    .contacts_socialn {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        row-gap: 20px;
+    }
+    .socialn_links {
+        margin: 0 13px;
+    }
+    
+}

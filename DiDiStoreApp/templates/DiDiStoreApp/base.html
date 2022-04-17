@@ -13,21 +13,21 @@
     <title>DiDi | {{title}}</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header_navigation">
+    <header class="header_navigation">
+       <div class="container">
             <div class="header_wrapper">
                 <div class="header__desktop-nav">
                     <nav class="header_nav">
                         <ul class="header_navigation_list left_side_navigation">
                             <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
-                            <li class="naviagtion_links"  data-toggle-id="categories">Категории</li>
+                            <li class="naviagtion_links" id="show_categories">Категории</li>
                         </ul>
                     </nav>
-                    <p class="header_logo">DiDi</p>
+                    <a href="{% url 'home' %}" class="header_logo">DiDi</a>
                     <nav class="header_nav">
                         <ul class="header_navigation_list right_side_navigation">
                             <li class="search_line">
-                                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                                <i class="fa-solid fa-magnifying-glass " id="search_icon"></i>
                                 <form action="#" method="post" class="search_form">
                                     <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
                                     <input type="submit" value="поиск" class="search_submit">
@@ -38,15 +38,15 @@
                                     <i class="fa-solid fa-bag-shopping "></i>
                                 </a>
                             </li>
-                            <li ><i class="fa-solid fa-user " data-toggle-id="registartion"></i></li>
+                            <li id="show_registrations"><i class="fa-solid fa-user"></i></li>
                         </ul>
                     </nav>
 
                 </div>
-                <div class="header__mobile-nav">
+                <div class="header__tablet-nav">
                     <nav class="header_nav">
                         <div class="header__nav-side">
-                            <p class="header_logo">DiDi</p>
+                            <a href="{% url 'home' %}" class="header_logo">DiDi</a>
                             <div class="search_line">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <form action="#" method="post" class="search_form">
@@ -54,35 +54,71 @@
                                     <input type="submit" value="поиск" class="search_submit">
                                 </form>
                             </div>      
-                            <div class="header__burger-menu" data-toggle-id="overlay">
+                            <div class="header__burger-menu" id="show_overlay">
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                             </div>
                         </div>
-                        <div class="background header__overlay" id="overlay" hidden>
+                        <div class="background header__overlay" >
                             <div class="container">
-                                <p class="close_btn" data-toggle-id="overlay">Закрыть</p>
-                                <ul>
-                                    <li> <a href="{% url 'home' %}">Гавная</a> </li>
-                                    <li data-toggle-id="categories">Категории</li>
-                                    <li><a href="{% url 'desired' %}">Корзина</a> </li>
-                                    <li id="overlay" data-toggle-id="registartion">Регистрация</li>
+                                <p class="close_btn" id="hide_overlay">Закрыть</p>
+                                <ul class="overlay__list">
+                                    <li class="overlay__links"><a href="{% url 'home' %}">Главная</a> </li>
+                                    <li  class="overlay__links"id="show_categories">Категории</li>
+                                    <li class="overlay__links"><a href="{% url 'desired' %}">Корзина</a> </li>
+                                    <li  class="overlay__links"id="show_registrations">Регистрация</li>
                                 </ul>
                             </div>
 
                             
                         </div>
                     </nav>
-                     
+                    
                 </div>
-               
+                <div class="header__mobile-nav">
+                    <nav class="header_nav">
+                        <div class="header__nav-side">
+                            <a href="{% url 'home' %}" class="header_logo">DiDi</a>
+                            
+                            <div class="header__burger-menu" id="show_overlay">
+                                <span class="header__burger-menu-lines"></span>
+                                <span class="header__burger-menu-lines"></span>
+                                <span class="header__burger-menu-lines"></span>
+                            </div>
+                        </div>
+                        <div class="background header__overlay" >
+                            <div class="container">
+                                <p class="close_btn" id="hide_overlay">Закрыть</p>
+                                <ul class="overlay__list">
+                                    <li class="overlay__links"><a href="{% url 'home' %}">Главная</a> </li>
+                                    <li  class="overlay__links"id="show_categories">Категории</li>
+                                    <li class="overlay__links"><a href="{% url 'desired' %}">Корзина</a> </li>
+                                    <li  class="overlay__links"id="show_registrations">Регистрация</li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                    </nav>
+                    <div class="search_line">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <form action="#" method="post" class="search_form">
+                            <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
+                            <input type="submit" value="поиск" class="search_submit">
+                        </form>
+                    </div>     
+                    
+                </div>
+            
             </div>
-        </header>
-        <article class="background category_window" id="categories" hidden>
+       </div>
+    </header>
+    <div class="container">
+        <article class="background category_window" >
             <div class="container">
                 <div class="category_wrapper">
-                    <p class="close_btn" data-toggle-id = "categories">Закрыть</p>
+                    <p class="close_btn" id="hide_categories">Закрыть</p>
                     <section class="category_section">
                         <div class="categories">
                             <h2 class="category_title">Художественная литература</h2>
@@ -132,9 +168,9 @@
                 </div>
             </div>
         </article>
-        <article class="background registration_window" id='registartion' hidden>
+        <article class="background registration_window" >
             <div class="registration_wrapper modal_window_wrapper">
-                <p class="close_btn close_windows" data-toggle-id='registartion'>закрыть</p>
+                <p class="close_btn" id="hide_registrations">Закрыть</p>
                 <div class="sign_up">
                     <h2 class="registration_title">Регистрация</h2>
                     <form action="#" method="post" class="registration_forms">
@@ -195,7 +231,7 @@
                 <section class="socialn_navigation footer_general_layout">  
                     <div class="payments_categories footer_general_layout">
                         <nav class="payments">
-                            <h2 class="payments_categories_title">Покупка</h2>
+                            <h2 class="payments_categories_title payments__title">Покупка</h2>
                             <ul class="payment_list">
                                 <li class="payments_categories_link"><a href="#">Способы оплаты</a></li>
                                 <li class="payments_categories_link"><a href="#">Способы доставки</a></li>
@@ -203,7 +239,7 @@
                             </ul>
                         </nav>
                         <nav class="min_catregories">
-                            <h2 class="payments_categories_title">Каталог продукции</h2>
+                            <h2 class="payments_categories_title  payments__title">Каталог продукции</h2>
                             <ul class="min_category_list">
                                 <li class="payments_categories_link"><a href="#">Фантастика, фентези, ужасы</a></li>
                                 <li class="payments_categories_link"><a href="#">Книги для детей и родителей</a></li>
@@ -223,7 +259,6 @@
                         <nav class="social_networks ">
                             <ul class="socialn_list">
                                 <li class="socialn_links" title="instagram"><a href="https://fontawesome.com/v5/icons/camera-polaroid?s=solid" target="_blank"><i class="fas fa-camera-retro"></i></a></li>
-                                <li class="socialn_links" title="telegram"><a href="#" target="_blank"><i class="fa-solid fa-paper-plane"></i></a></li>
                                 <li class="socialn_links" title="youtube"><a href="https://www.youtube.com/watch?v=XvJeAXOUjY4&t=8s" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
                                 <li class="socialn_links" title="twitter"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                             </ul>
