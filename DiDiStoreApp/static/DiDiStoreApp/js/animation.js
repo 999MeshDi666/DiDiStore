@@ -10,30 +10,37 @@ search_icon.addEventListener('click', ()=>{
 });
 
 
-const showHideWindows = (show_prop, hide_prop, classList_prop, toggler_prop)=>{
+// const showHideWindows = (show_prop, hide_prop, classList_prop, toggler_prop)=>{
 
-    show_prop.addEventListener('click', ()=>{
-        classList_prop.classList.toggle(toggler_prop);
-        bdy.style.overflowY = 'hidden';
+//     show_prop.addEventListener('click', ()=>{
+//         classList_prop.classList.toggle(toggler_prop);
+//         bdy.style.overflowY = 'hidden';
         
-    });
-    hide_prop.addEventListener('click', ()=>{
-        classList_prop.classList.toggle(toggler_prop);
-        bdy.style.overflowY = 'auto';
-    });
-}
+//     });
+//     hide_prop.addEventListener('click', ()=>{
+//         classList_prop.classList.toggle(toggler_prop);
+//         bdy.style.overflowY = 'auto';
+//     });
+// }
 
-let category_window = document.querySelector('.category_window');
-let hide_categories = document.getElementById('hide_categories');
-let show_categories = document.getElementById('show_categories');
-showHideWindows(show_categories,hide_categories,category_window,'show_window');
+// let category_window = document.querySelector('.category_window');
+// let hide_categories = document.getElementById('hide_categories');
+// let show_categories = document.getElementById('show_categories');
+// showHideWindows(show_categories,hide_categories,category_window,'show_window');
 
+
+// let hide_registrations = document.getElementById('hide_registrations');
+// let show_registrations = document.getElementById('show_registrations');
+// showHideWindows(show_registrations,hide_registrations,registration_window,'show_window');
+
+document.addEventListener('click', (e)=>{
+    let id = e.target.dataset.toggleId;
+    if(!id) return;
+    let background = document.getElementById(id);
+    background.hidden = !background.hidden;
+})
+  
 let registration_window = document.querySelector('.registration_window');
-let hide_registrations = document.getElementById('hide_registrations');
-let show_registrations = document.getElementById('show_registrations');
-showHideWindows(show_registrations,hide_registrations,registration_window,'show_window');
-
-
 let sign_up = document.querySelector('.sign_up');
 let sign_in = document.querySelector('.sign_in');
 
@@ -49,17 +56,4 @@ let sign_in_btn = document.getElementById('#sign_in').addEventListener('click',(
 });
 
 
-// let book_modal_window = document.querySelector('.book_modal_window');
-// let show_modal_window = document.querySelectorAll('.buy_btn');
-// show_modal_window.forEach( (e) => {e.addEventListener('click',() => {
 
-//         book_modal_window.classList.toggle('show_window');
-//         bdy.style.overflowY = 'hidden';
-        
-//     });
-// });
-// let hide_modal_window = document.getElementById('hide_modal_window');
-// hide_modal_window.addEventListener('click', ()=>{
-//     book_modal_window.classList.toggle('show_window');
-//     bdy.style.overflowY = 'auto';
-// });

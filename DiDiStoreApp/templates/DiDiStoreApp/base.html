@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
     <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/animation.css' %}">
     <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/all.css' %}">
-    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
     <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/responsives.css' %}">
     
     <title>DiDi | {{title}}</title>
@@ -20,16 +20,16 @@
                     <nav class="header_nav">
                         <ul class="header_navigation_list left_side_navigation">
                             <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
-                            <li class="naviagtion_links" id="show_categories">Категории</li>
+                            <li class="naviagtion_links"  data-toggle-id="categories">Категории</li>
                         </ul>
                     </nav>
                     <p class="header_logo">DiDi</p>
-                    <nav class="header_navigation">
+                    <nav class="header_nav">
                         <ul class="header_navigation_list right_side_navigation">
                             <li class="search_line">
                                 <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
                                 <form action="#" method="post" class="search_form">
-                                    <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
+                                    <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
                                     <input type="submit" value="поиск" class="search_submit">
                                 </form>
                             </li>
@@ -38,7 +38,7 @@
                                     <i class="fa-solid fa-bag-shopping "></i>
                                 </a>
                             </li>
-                            <li id="show_registrations"><i class="fa-solid fa-user "></i></li>
+                            <li ><i class="fa-solid fa-user " data-toggle-id="registartion"></i></li>
                         </ul>
                     </nav>
 
@@ -47,30 +47,42 @@
                     <nav class="header_nav">
                         <div class="header__nav-side">
                             <p class="header_logo">DiDi</p>
-                            <div class="header__burger-menu">
+                            <div class="search_line">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <form action="#" method="post" class="search_form">
+                                    <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
+                                    <input type="submit" value="поиск" class="search_submit">
+                                </form>
+                            </div>      
+                            <div class="header__burger-menu" data-toggle-id="overlay">
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                             </div>
                         </div>
-                        <div class="header__overlay">
+                        <div class="background header__overlay" id="overlay" hidden>
+                            <div class="container">
+                                <p class="close_btn" data-toggle-id="overlay">Закрыть</p>
+                                <ul>
+                                    <li> <a href="{% url 'home' %}">Гавная</a> </li>
+                                    <li data-toggle-id="categories">Категории</li>
+                                    <li><a href="{% url 'desired' %}">Корзина</a> </li>
+                                    <li id="overlay" data-toggle-id="registartion">Регистрация</li>
+                                </ul>
+                            </div>
+
                             
                         </div>
                     </nav>
-                    <div class="search_line" >
-                        <form action="#" method="post" class="search_form">
-                            <input type="search" name="seaech" id="sreach" placeholder="Автор, назваие, ISBN" class="search_input">
-                            <input type="submit" value="поиск" class="search_submit">
-                        </form>
-                    </div>         
+                     
                 </div>
                
             </div>
         </header>
-        <article class="background category_window">
+        <article class="background category_window" id="categories" hidden>
             <div class="container">
                 <div class="category_wrapper">
-                    <p class="close_btn" id="hide_categories">Закрыть</p>
+                    <p class="close_btn" data-toggle-id = "categories">Закрыть</p>
                     <section class="category_section">
                         <div class="categories">
                             <h2 class="category_title">Художественная литература</h2>
@@ -120,9 +132,9 @@
                 </div>
             </div>
         </article>
-        <article class="background registration_window">
+        <article class="background registration_window" id='registartion' hidden>
             <div class="registration_wrapper modal_window_wrapper">
-                <p class="close_btn close_windows" id="hide_registrations">закрыть</p>
+                <p class="close_btn close_windows" data-toggle-id='registartion'>закрыть</p>
                 <div class="sign_up">
                     <h2 class="registration_title">Регистрация</h2>
                     <form action="#" method="post" class="registration_forms">

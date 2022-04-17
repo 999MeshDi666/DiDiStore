@@ -59,15 +59,12 @@
     .container{
         width: 768px;
     }
-    /* header */
+   
     .header__desktop-nav{
         display: none;
     }
     .header__mobile-nav{
         display: block
-    }
-    .header_nav{
-        margin-bottom: 20px
     }
     .header__nav-side{
         display: flex;
@@ -83,22 +80,34 @@
         margin: 7px 0;
         cursor: pointer;
     }
+   
     .search_line {
-        width: 480px;
+        width: 486px;
         height: 40px;
         margin: 0 auto;
-        padding: 6px 16px;
+        padding: 10px 16px;
         box-sizing: border-box;
     }
+    .fa-magnifying-glass{
+        font-size: 20px;
+    }
+    .search_form{
+        visibility: visible;
+        opacity: 1;
+    }
     .search_input {
-        width: 400px;
+        width: 368px;
+    }
+    .search_input::placeholder{
+        font-size: 10px;
+        
     }
     .book_contanet_wrapper {
         width: 100%;
         margin: 0 auto;
     }
     .search_input::placeholder{
-        font-size: 14px;
+        font-size: 1px;
         
     }
 

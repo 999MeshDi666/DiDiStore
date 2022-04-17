@@ -7,7 +7,6 @@
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    
 }
 @keyframes search_animation{
     0%{
@@ -34,3 +33,6 @@
 .registration_window_sign_in{
     padding-top: 116px;
 }
+/* id="show_categories" */
+/* id="hide_categories" */
+/* id="show_registrations" */
