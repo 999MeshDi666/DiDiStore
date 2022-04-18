@@ -20,14 +20,14 @@
                     <nav class="header_nav">
                         <ul class="header_navigation_list left_side_navigation">
                             <li><a href="{% url 'home' %}"  class="naviagtion_links">Главная</a></li>
-                            <li class="naviagtion_links" id="show_categories">Категории</li>
+                            <li class="naviagtion_links" data-toggle-id="categories">Категории</li>
                         </ul>
                     </nav>
                     <a href="{% url 'home' %}" class="header_logo">DiDi</a>
                     <nav class="header_nav">
                         <ul class="header_navigation_list right_side_navigation">
                             <li class="search_line">
-                                <i class="fa-solid fa-magnifying-glass " id="search_icon"></i>
+                                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
                                 <form action="#" method="post" class="search_form">
                                     <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
                                     <input type="submit" value="поиск" class="search_submit">
@@ -38,7 +38,7 @@
                                     <i class="fa-solid fa-bag-shopping "></i>
                                 </a>
                             </li>
-                            <li id="show_registrations"><i class="fa-solid fa-user"></i></li>
+                            <li><i class="fa-solid fa-user" data-toggle-id="registrations"></i></li>
                         </ul>
                     </nav>
 
@@ -54,20 +54,20 @@
                                     <input type="submit" value="поиск" class="search_submit">
                                 </form>
                             </div>      
-                            <div class="header__burger-menu" id="show_overlay">
+                            <div class="header__burger-menu" data-toggle-id="overlay">
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                                 <span class="header__burger-menu-lines"></span>
                             </div>
                         </div>
-                        <div class="background header__overlay" >
+                        <div class="background header__overlay" id="overlay" hidden>
                             <div class="container">
-                                <p class="close_btn" id="hide_overlay">Закрыть</p>
+                                <p class="close_btn" data-toggle-id="overlay">Закрыть</p>
                                 <ul class="overlay__list">
                                     <li class="overlay__links"><a href="{% url 'home' %}">Главная</a> </li>
-                                    <li  class="overlay__links"id="show_categories">Категории</li>
+                                    <li  class="overlay__links" data-toggle-id="categories">Категории</li>
                                     <li class="overlay__links"><a href="{% url 'desired' %}">Корзина</a> </li>
-                                    <li  class="overlay__links"id="show_registrations">Регистрация</li>
+                                    <li  class="overlay__links" data-toggle-id="registrations">Регистрация</li>
                                 </ul>
                             </div>
 
@@ -76,49 +76,14 @@
                     </nav>
                     
                 </div>
-                <div class="header__mobile-nav">
-                    <nav class="header_nav">
-                        <div class="header__nav-side">
-                            <a href="{% url 'home' %}" class="header_logo">DiDi</a>
-                            
-                            <div class="header__burger-menu" id="show_overlay">
-                                <span class="header__burger-menu-lines"></span>
-                                <span class="header__burger-menu-lines"></span>
-                                <span class="header__burger-menu-lines"></span>
-                            </div>
-                        </div>
-                        <div class="background header__overlay" >
-                            <div class="container">
-                                <p class="close_btn" id="hide_overlay">Закрыть</p>
-                                <ul class="overlay__list">
-                                    <li class="overlay__links"><a href="{% url 'home' %}">Главная</a> </li>
-                                    <li  class="overlay__links"id="show_categories">Категории</li>
-                                    <li class="overlay__links"><a href="{% url 'desired' %}">Корзина</a> </li>
-                                    <li  class="overlay__links"id="show_registrations">Регистрация</li>
-                                </ul>
-                            </div>
-
-                            
-                        </div>
-                    </nav>
-                    <div class="search_line">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <form action="#" method="post" class="search_form">
-                            <input type="search" name="search" id="search" placeholder="Автор, назваие, ISBN" class="search_input">
-                            <input type="submit" value="поиск" class="search_submit">
-                        </form>
-                    </div>     
-                    
-                </div>
-            
             </div>
        </div>
     </header>
     <div class="container">
-        <article class="background category_window" >
+        <article class="background category_window" id = "categories" hidden>
             <div class="container">
                 <div class="category_wrapper">
-                    <p class="close_btn" id="hide_categories">Закрыть</p>
+                    <p class="close_btn" data-toggle-id="categories">Закрыть</p>
                     <section class="category_section">
                         <div class="categories">
                             <h2 class="category_title">Художественная литература</h2>
@@ -168,9 +133,9 @@
                 </div>
             </div>
         </article>
-        <article class="background registration_window" >
+        <article class="background registration_window" id="registrations" hidden>
             <div class="registration_wrapper modal_window_wrapper">
-                <p class="close_btn" id="hide_registrations">Закрыть</p>
+                <p class="close_btn" data-toggle-id="registrations">Закрыть</p>
                 <div class="sign_up">
                     <h2 class="registration_title">Регистрация</h2>
                     <form action="#" method="post" class="registration_forms">

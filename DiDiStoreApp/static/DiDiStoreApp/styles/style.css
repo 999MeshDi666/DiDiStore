@@ -167,7 +167,7 @@ input:-webkit-autofill{
     right: 0;
     overflow-y: scroll;
     user-select: none;
-    display: none;
+    /* display: none; */
 }
 .close_btn{
     text-align: right;

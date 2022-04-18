@@ -23,13 +23,16 @@
 }
 
 
-.show_window{
+/* .show_window{
     display: block;
 }
 .hide_window{
     display: none;
-}
+} */
 
+.scroll{
+    overflow: hidden;
+}
 .registration_window_sign_in{
     padding-top: 116px;
 }
