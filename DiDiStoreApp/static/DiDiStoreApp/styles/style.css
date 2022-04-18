@@ -235,6 +235,10 @@ input:-webkit-autofill{
     box-sizing: border-box;
     
 }
+.registartion_close_btn{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
 .close_windows{
     font-size: 14px;
     margin-bottom: 10px;
@@ -250,10 +254,10 @@ input:-webkit-autofill{
 .registration_forms{
     padding: 0 40px;
 }
-.form_field{
+.form_field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 .registartion_input_titels{
     margin: 0 0 5px 14px;
@@ -281,6 +285,7 @@ input:-webkit-autofill{
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: all .6s;
+    box-sizing: border-box;
 }
 .registartion_btn:hover{
     background-color: rgb(199, 199, 199);
