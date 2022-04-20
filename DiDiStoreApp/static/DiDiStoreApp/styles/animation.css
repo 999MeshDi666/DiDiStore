@@ -1,6 +1,7 @@
 .search_line_open{
     width: 240px;
 }
+
 .search_form_animation{
     animation-name: search_animation;
     animation-duration: 1s;
@@ -36,6 +37,5 @@
 .registration_window_sign_in{
     padding-top: 116px;
 }
-/* id="show_categories" */
-/* id="hide_categories" */
-/* id="show_registrations" */
+
+

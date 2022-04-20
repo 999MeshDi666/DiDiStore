@@ -409,7 +409,7 @@
     }
     .registration_wrapper {
         width: 260px;
-        padding: 24px 26px;
+        padding: 24px 35px;
         box-sizing: border-box;
     }
     .registartion_close_btn {
@@ -432,10 +432,10 @@
         font-size: 12px;
     }
     .registartion_btn {
-        width: 210px;
+        width: 193px;
     }
     .ch_registration_form {
-        font-size: 16px;
+        font-size: 12px;
     }
     
 }
