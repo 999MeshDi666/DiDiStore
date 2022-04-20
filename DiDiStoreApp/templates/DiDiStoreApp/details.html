@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/all.css' %}">
+    <link rel="stylesheet" href="{% static 'DiDiStoreApp/styles/responsives.css' %}">
+    
+    <title>DiDi | {{title}}</title>
+</head>
+<body>
+    <div class="container">
+        <article class="details">
+            <a href="{% url 'home' %}" class="close_btn details__link">Закрыть</a>
+            <div class="tags">
+                <div class="tags__item">
+                    <h4 class="tags__title">Издательство:</h4>
+                    <p class="tags__subtitle">Аст</p>
+                </div>
+                <div class="tags__item">
+                    <h4 class="tags__title">Год издания:</h4>
+                    <p class="tags__subtitle">2015</p>
+                </div>
+                <div class="tags__item">
+                    <h4 class="tags__title">Автор:</h4>
+                    <p class="tags__subtitle">Ричард Фейман</p>
+                </div>
+                <div class="tags__item">
+                    <h4 class="tags__title">Язык:</h4>
+                    <p class="tags__subtitle">Русский</p>
+                </div>
+                <div class="tags__item">
+                    <h4 class="tags__title">Жанры:</h4>
+                    <p class="tags__subtitle">Биография | Автобиография | Юмор</p>
+                </div>
+            </div>
+            <div class="description">
+                <div class="description__item description__book-img">
+                    <img src="{% static 'DiDiStoreApp/images/faiman.png' %}" alt="book" class="description__img">
+                    <p class="description__subtitle">Вы конечно шутите, <br>
+                        мистер Фейман</p>
+                </div>
+                <div class="decription__item">
+                    <h3 class="description__title">Описание книги</h3>
+                    <p class="description__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                        software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
