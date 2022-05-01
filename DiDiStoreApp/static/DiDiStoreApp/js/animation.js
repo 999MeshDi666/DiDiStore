@@ -13,6 +13,7 @@ document.addEventListener('click', (e)=>{
         let overlay = document.getElementById('overlay');
         overlay.hidden = !overlay.hidden;
     }
+    document.body.classList.toggle('scroll');
     let background = document.getElementById(id);
     background.hidden = !background.hidden; 
    

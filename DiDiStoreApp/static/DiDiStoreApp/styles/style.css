@@ -225,7 +225,7 @@ input:-webkit-autofill{
 
 .registration_window{
     padding-top: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .modal_window_wrapper{
     background-color: #fff;
