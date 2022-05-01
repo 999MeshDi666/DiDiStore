@@ -433,7 +433,7 @@ input:-webkit-autofill{
 }
 
 .user_account_wrapper{
-    padding: 60px 165px;
+    /* padding: 60px 165px; */
 }
 .user{
     display: flex;
@@ -442,7 +442,7 @@ input:-webkit-autofill{
 .user_avatar{
     margin-right: 63px;
 }
-.avatar_img{
+.avatar_icon{
     font-size: 136px;
 }
 .avatar_name{
