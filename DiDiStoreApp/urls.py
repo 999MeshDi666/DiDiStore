@@ -7,4 +7,5 @@ urlpatterns = [
     path('account/', account, name = 'account'),
     path('desired/', desired, name = 'desired'),
     path('details/', details, name = 'details'),
+    path('payments/', payments, name = 'payments'),
 ]

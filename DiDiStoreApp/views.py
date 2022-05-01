@@ -12,3 +12,6 @@ def desired(request):
 
 def details(request):
     return render(request, 'DiDiStoreApp/details.html', {'title': 'Подробнее'})
+
+def payments(request):
+    return render(request, 'DiDiStoreApp/payments.html', {'title': 'Оплата'})
