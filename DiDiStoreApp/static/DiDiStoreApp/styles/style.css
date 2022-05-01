@@ -633,7 +633,7 @@ input:-webkit-autofill{
 .tags__title {
     background-color: #fff;
     color: #000;
-    width: 200px;
+    width: 170px;
     padding: 10px 0;
     box-sizing: border-box;
     text-align: center;
@@ -682,9 +682,10 @@ input:-webkit-autofill{
     font-weight: 300;
 }
 
-.counter{
+.counter,.buy{
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 .counter__plus{
     background: none;
@@ -700,10 +701,7 @@ input:-webkit-autofill{
     font-weight: bold;
     font-size: 18px;
 }
-.buy{
-    display: flex;
-    align-items: center;
-}
+
 .action-btns__desired{
     font-size: 32px;
     cursor: pointer;
@@ -737,7 +735,7 @@ input:-webkit-autofill{
     width: 367px;
     height: 205px;
     position: relative;
-    transition: all .6s ease-in; 
+    transition: all .4s ease-in; 
     transform-style: preserve-3d;
     perspective: 500;
     cursor: pointer;
@@ -900,12 +898,15 @@ input:-webkit-autofill{
     margin-left: 216px;
     
 }
+.payments__title{
+    margin-bottom: 30px;
+
+}
 .payments__subtitle{
     margin-bottom: 12px;
     letter-spacing: 1.5px;
 }
 .payments__subtitle a{
     color: #fff;
-
 }
 
